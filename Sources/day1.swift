@@ -18,7 +18,7 @@ class Day1 {
         return acc
     }
 
-    func Parse(){
+    private func Parse(){
         let lines = self.data.split(separator: "\n")
 
         for line in lines {
