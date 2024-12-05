@@ -17,9 +17,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Install deps
-      run: sudo apt-get update && sudo apt-get install install -y binutils git gnupg2 libc6-dev \
-          libcurl4-openssl-dev \
-          libedit2 \
+      run: |
+          sudo apt-get update && sudo apt-get install -y binutils git gnupg2 libc6-dev libcurl4-openssl-dev libedit2 \
           libgcc-11-dev \
           libpython3-dev \
           libsqlite3-0 \
